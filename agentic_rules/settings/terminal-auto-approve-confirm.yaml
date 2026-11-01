@@ -1,0 +1,14 @@
+"chat.tools.terminal.autoApprove":
+  rm: false
+  rmdir: false
+  mv: false
+  cp: false
+  mkdir: false
+  touch: false
+  chmod: false
+  chown: false
+  tee: false
+  dd: false
+  truncate: false
+  install: false
+  "/^git (add|commit|checkout|clean|reset|restore|apply|push|pull|merge|rebase|switch)\\b.*$/": false

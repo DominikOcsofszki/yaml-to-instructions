@@ -1,0 +1,33 @@
+[project]
+name = "yaml-to-instructions"
+version = "0.1.0"
+description = "Turn declarative YAML rules into Copilot CLI instruction files"
+readme = "README.md"
+authors = [
+    { name = "Dominik Ocsofszki" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.14.2",
+    "pyyaml>=6.0.3",
+]
+
+[project.scripts]
+yaml-to-instructions = "yaml_to_instructions:main"
+yaml-to-instructions-migrate = "yaml_to_instructions.migrate:main"
+yaml-to-instructions-check-settings = "yaml_to_instructions.check_settings:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/yaml_to_instructions"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

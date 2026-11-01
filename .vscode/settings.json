@@ -1,0 +1,35 @@
+{
+  "chat.agent.sandbox.enabled": "on",
+  "chat.agent.sandbox.allowUnsandboxedCommands": false,
+  "chat.agent.sandbox.fileSystem.userConfiguredPaths": {
+    "readwritePaths": []
+  },
+  "chat.tools.terminal.autoApprove": {
+    "pwd": true,
+    "ls": true,
+    "find": true,
+    "rg": true,
+    "grep": true,
+    "cat": true,
+    "head": true,
+    "tail": true,
+    "wc": true,
+    "file": true,
+    "stat": true,
+    "/^git (status|diff|log|show)\\b.*$/": true,
+    "uv": true,
+    "rm": false,
+    "rmdir": false,
+    "mv": false,
+    "cp": false,
+    "mkdir": false,
+    "touch": false,
+    "chmod": false,
+    "chown": false,
+    "tee": false,
+    "dd": false,
+    "truncate": false,
+    "install": false,
+    "/^git (add|commit|checkout|clean|reset|restore|apply|push|pull|merge|rebase|switch)\\b.*$/": false
+  }
+}

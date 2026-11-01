@@ -1,0 +1,14 @@
+"chat.tools.terminal.autoApprove":
+  pwd: true
+  ls: true
+  find: true
+  rg: true
+  grep: true
+  cat: true
+  head: true
+  tail: true
+  wc: true
+  file: true
+  stat: true
+  uv: true
+  "/^git (status|diff|log|show)\\b.*$/": true

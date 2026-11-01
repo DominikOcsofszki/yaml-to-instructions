@@ -1,0 +1,5 @@
+"chat.agent.sandbox.enabled": "on"
+"chat.agent.sandbox.allowUnsandboxedCommands": false
+"chat.agent.sandbox.fileSystem.userConfiguredPaths":
+  # VS Code grants read/write access to the agent's current working directory.
+  readwritePaths: []
